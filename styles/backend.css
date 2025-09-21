@@ -2,10 +2,10 @@
   display: flex;
   flex-grow: 1;
   padding: 40px 20px;
-  margin: 40px auto;
 }
 
 .course-info {
+  flex: 1 1 300px;
 }
 
 h2 {
@@ -20,7 +20,6 @@ p {
 }
 
 ul {
-  list-style: disc inside;
   padding-left: 20px;
   margin-top: 10px;
 }
@@ -42,4 +41,7 @@ ul li {
 
 a:hover {
   color: purple;
+}
+.right {
+  height: 400px;
 }

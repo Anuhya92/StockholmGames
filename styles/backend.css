@@ -1,0 +1,45 @@
+.course {
+  display: flex;
+  flex-grow: 1;
+  padding: 40px 20px;
+  margin: 40px auto;
+}
+
+.course-info {
+}
+
+h2 {
+  font-size: 28px;
+  color: #0056b3;
+  margin: 20px;
+}
+
+p {
+  margin: 12px;
+  font-size: 16px;
+}
+
+ul {
+  list-style: disc inside;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.details {
+  flex: 1 1 200px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.details p {
+  margin-bottom: 8px;
+}
+
+a:hover {
+  color: purple;
+}

@@ -1,54 +1,17 @@
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ecf0f1;
-}
-.container {
-  display: flex;
-  gap: 20px;
-  padding: 25px;
-}
-.container h3 {
-  color: #2c3e50;
-  font-weight: bold;
-  font-size: 30px;
-  margin: 25px;
-  padding: 15px;
-}
-.container p {
-  font-size: 16px;
-  color: #333;
-  margin: 20px;
-  padding: 10px;
-}
-
-.container button {
-  align-self: center;
-  padding: 12px 24px;
-  background-color: #3498db;
-  color: white;
+.btn-container button {
+  background: linear-gradient(135deg, #3498db 0%, #7681b3 100%);
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 10px;
+  color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 20px;
-  padding: 10px;
-}
-.left button:hover {
-  background-color: #2980b9;
-}
-.right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 14px 20px;
+  text-align: center;
 }
 
-.right img {
-  text-align: center;
-  height: auto;
-  border-radius: 8px;
+.btn-container {
+  margin: 20px;
+  padding: 20px;
 }

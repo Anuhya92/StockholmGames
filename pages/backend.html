@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backend programming</title>
+    <link
+      rel="icon"
+      href="../images/favicon.png"
+      sizes="32x32"
+      type="image/png"
+    />
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/backend.css" />
   </head>
   <body>
     <!-- Header -->
     <nav class="navbar">
-      <div class="logo">Logo</div>
+      <div class="logo">
+        <img
+          width="70"
+          height="70"
+          src="../images/logo.png"
+          alt="Stockholm games"
+        />
+      </div>
+      <!--Checkbox will be hidden and used to control menu in mobile devices-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <ul class="nav-links">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./frontend.html">Frontend Program</a></li>
         <li class="active"><a href="./backend.html">Backend Program</a></li>
-        <li><a href="./python.html">Python Program</a></li>
-        <li><a href="./contact us.html">Contact us</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
       </ul>
     </nav>
-    <section class="course">
+    <main class="container">
       <div class="left">
-        <h2>Backend Development</h2>
+        <h3>Backend Development</h3>
         <p>
-          To become a server-side expert with backend technologies such as
-          Node.js,Express and databases likeMongoDB.
+          A backend developer builds and maintains the server-side logic,
+          databases, and APIs that power websites and applications, ensuring the
+          application runs smoothly and efficiently. They focus on the parts
+          users don't see, working with programming languages like Python or
+          Java and databases to store, manage, and retrieve data, while also
+          handling server management, security, and cloud integration.
         </p>
 
         <div class="course-info">
@@ -34,26 +57,35 @@
             <li>Rest API & Authentication</li>
             <li>API server</li>
           </ul>
-        </div>
-        <div class="details">
-          <p><strong>Duration:</strong>4Months</p>
-          <p><strong>Mode:</strong>Online/Offine</p>
-        </div>
-        <div>
-          <a href="../pages/contact us.html" alt="" class="btn-enroll"
-            >Enroll in Python</a
-          >
+          <div class="details">
+            <p><strong>Duration:</strong> 4 Months</p>
+            <p><strong>Mode:</strong> Classroom / Remote</p>
+          </div>
+          <div class="btn-container">
+            <a class="btn" href="../pages/contact.html" alt="Enquire now button"
+              >Enquire Now</a
+            >
+          </div>
         </div>
       </div>
 
       <div class="right">
-        <img
-          src="../images/backend.jpg"
-          alt="image of Backend Development"
-          width="300px"
-        />
+        <img src="../images/backend.jpg" alt="Image of Backend Development" />
       </div>
-    </section>
-    <footer>&copy;website 2025</footer>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Stockholm games. All rights reserved</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <span>|</span>
+          <a href="#">Terms of service</a>
+          <span>|</span>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

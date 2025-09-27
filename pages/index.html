@@ -4,54 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stockholm games</title>
+    <link
+      rel="icon"
+      href="../images/favicon.png"
+      sizes="32x32"
+      type="image/png"
+    />
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
     <!-- Header -->
     <nav class="navbar">
-      <div class="logo">Logo</div>
+      <div class="logo">
+        <img
+          width="70"
+          height="70"
+          src="../images/logo.png"
+          alt="Stockholm games"
+        />
+      </div>
+      <!--Checkbox will be hidden and used to control menu in mobile devices-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
       <ul class="nav-links">
         <li class="active"><a href="./index.html">Home</a></li>
         <li><a href="./frontend.html">Frontend Program</a></li>
         <li><a href="./backend.html">Backend Program</a></li>
-        <li><a href="./python.html">Python Program</a></li>
-        <li><a href="./contact us.html">Contact Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
       </ul>
     </nav>
 
     <!-- Content -->
-    <main>
-      <div class="container">
-        <div class="left">
-          <h3>Welcome to Study programming</h3>
-          <p>
-            This programming is designed for those of you who are interested in
-            Web Development from different perspectives.You will learn how to
-            technically develop website and web-based systemby using current
-            programming languages and techniques.Throughout the
-            programme,information system runs as a common thread,i.e.the
-            connection between and the combination of information
-            technolgy(IT),businesses and people
-          </p>
-          <h3>Form of Instruction</h3>
-          <p>
-            The studies involve fulltime job.The scheduled teachning varies and
-            many courses include seminars and project work.Students are required
-            to participate actively in the courses which also include
-            independent studies. Theory is a vital part of the programme and
-            theortical studies alternate with production exercises.
-          </p>
+    <main class="container">
+      <div class="left">
+        <h3>Welcome to Study programming</h3>
+        <p>
+          This programming is designed for those of you who are interested in
+          Web Development from different perspectives.You will learn how to
+          technically develop website and web-based systemby using current
+          programming languages and techniques.Throughout the
+          programme,information system runs as a common thread,i.e.the
+          connection between and the combination of information
+          technolgy(IT),businesses and people
+        </p>
+        <h3>Form of Instruction</h3>
+        <p>
+          The studies involve fulltime job.The scheduled teachning varies and
+          many courses include seminars and project work.Students are required
+          to participate actively in the courses which also include independent
+          studies. Theory is a vital part of the programme and theortical
+          studies alternate with production exercises.
+        </p>
 
+        <!--<div class="btn-container">
           <button>Read more!!</button>
-        </div>
-        <div class="right">
-          <img src="../images/image1.jpg" alt="" width="500px" />
-        </div>
+        </div>-->
+      </div>
+      <div class="right">
+        <img
+          src="../images/programming.png"
+          alt="Training programs offered image"
+        />
       </div>
     </main>
 
     <!-- Footer -->
-    <footer>&copy;website 2025</footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Stockholm games. All rights reserved</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <span>|</span>
+          <a href="#">Terms of service</a>
+          <span>|</span>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

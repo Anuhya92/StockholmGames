@@ -1,0 +1,113 @@
+label {
+  margin: 2px;
+}
+
+.user_form {
+  background: linear-gradient(135deg, #3498db 0%, #7681b3 100%);
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.user_information {
+  background-color: #d9f0ff;
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.user_input {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 150px 300px;
+  margin-bottom: 0.8rem;
+}
+
+.user_input label {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 14px 0;
+}
+
+.user_input input[type="text"],
+.user_input input[type="email"],
+.user_input input[type="tel"],
+.user_input select,
+.user_input textarea {
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin: 5px;
+  padding: 14px 15px;
+}
+
+.user_input textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 1.5rem;
+  margin: 5px 7px;
+  flex-wrap: wrap;
+}
+
+.radio-option,
+.checkbox-option {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+  accent-color: #3498db;
+  cursor: pointer;
+  height: 18px;
+  margin-right: 8px;
+  transform: scale(1.2);
+  width: 18px;
+}
+
+.radio-option label,
+.checkbox-option label {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+  display: inline-block;
+}
+
+.submit {
+  background: linear-gradient(135deg, #3498db 0%, #7681b3 100%);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 14px 20px;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: #7681b3;
+  color: #7681b3;
+}
+
+/* Responsive styling */
+@media (max-width: 780px) {
+  .user_form {
+    width: 100%;
+  }
+  .user_input {
+    gap: 0;
+    grid-template-columns: 1fr;
+    padding: 5px 0;
+  }
+}

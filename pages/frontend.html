@@ -4,24 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend programming</title>
+    <link
+      rel="icon"
+      href="../images/favicon.png"
+      sizes="32x32"
+      type="image/png"
+    />
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/frontend.css" />
   </head>
   <body>
     <!-- Header -->
     <nav class="navbar">
-      <div class="logo">Logo</div>
+      <div class="logo">
+        <img
+          width="70"
+          height="70"
+          src="../images/logo.png"
+          alt="Stockholm games"
+        />
+      </div>
+      <!--Checkbox will be hidden and used to control menu in mobile devices-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <ul class="nav-links">
         <li><a href="./index.html">Home</a></li>
         <li class="active"><a href="./frontend.html">Frontend Program</a></li>
         <li><a href="./backend.html">Backend Program</a></li>
-        <li><a href="./python.html">Python Program</a></li>
-        <li><a href="./contact us.html"> Contact us</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
       </ul>
     </nav>
-    <section class="course">
+
+    <!-- Content -->
+    <main class="container">
       <div class="left">
-        <h2>Frontend Development</h2>
+        <h3>Frontend Development</h3>
         <p>
           Front-end developers must have a strong foundation in HTML, CSS, and
           JavaScript, as these are the building blocks of web development. HTML
@@ -41,22 +62,33 @@
             <li>Portfolio</li>
           </ul>
           <div class="details">
-            <p><strong>Duration:</strong>4Months</p>
-            <p><strong>Mode:</strong>Online/Offine</p>
+            <p><strong>Duration: </strong>4 Months</p>
+            <p><strong>Mode: </strong>Classroom / Online</p>
           </div>
-          <a href="../pages/contact us.html" alt="click here to enroll"
-            >Click here to enroll</a
-          >
+          <div class="btn-container">
+            <a class="btn" href="../pages/contact.html" alt="Enquire now button"
+              >Enquire Now</a
+            >
+          </div>
         </div>
       </div>
       <div class="right">
-        <img
-          src="../images/frontend.jpg"
-          alt="image of Frontend Development"
-          width="400px"
-        />
+        <img src="../images/frontend.jpg" alt="Image of Frontend Development" />
       </div>
-    </section>
-    <footer>&copy;website 2025</footer>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Stockholm games. All rights reserved</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <span>|</span>
+          <a href="#">Terms of service</a>
+          <span>|</span>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

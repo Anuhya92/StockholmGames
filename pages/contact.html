@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link
+      rel="icon"
+      href="../images/favicon.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          width="70"
+          height="70"
+          src="../images/logo.png"
+          alt="Stockholm games"
+        />
+      </div>
+      <!--Checkbox will be hidden and used to control menu in mobile devices-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./frontend.html">Frontend Program</a></li>
+        <li><a href="./backend.html">Backend Program</a></li>
+        <li class="active"><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="user_form">
+        <h2>Contact us</h2>
+        <form
+          action="mailto: someone@gmail.com"
+          method="POST"
+          enctype="text/plain"
+          class="user_information"
+        >
+          <div class="user_input">
+            <label for="first-name"
+              >First Name <span class="required"></span>
+            </label>
+
+            <input
+              class="required"
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+
+          <div class="user_input">
+            <label for="last-name">
+              Last Name <span class="required"></span>
+            </label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div class="user_input">
+            <label for="mobile"> Mobile <span class="required"></span> </label>
+            <input
+              type="tel"
+              name="mobile"
+              id="mobile"
+              placeholder="Enter your mobile number"
+              required
+            />
+          </div>
+
+          <div class="user_input">
+            <label for="gender"> Gender <span class="required"></span> </label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="gender" value="Male" required />
+                <label>Male</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="gender" value="Female" required />
+                <label>Female</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="user_input">
+            <label for="course"> Course <span class="required"></span> </label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  name="course"
+                  id="frontend"
+                  value="Frontend"
+                  required
+                />
+                <label>Frontend</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  name="course"
+                  id="backend"
+                  value="Backend"
+                  required
+                />
+                <label>Backend</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="user_input">
+            <label>Existing skills:</label>
+            <div class="checkbox-group">
+              <div class="checkbox-option">
+                <input type="checkbox" id="html" name="Skills" value="HTML" />
+                <label class="html">HTML</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="css" name="Skills" value="CSS" />
+                <label class="css">CSS</label>
+              </div>
+
+              <div class="checkbox-option">
+                <input type="checkbox" id="git" name="Skills" value="GIT" />
+                <label class="git">GIT</label><br />
+              </div>
+
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  id="javascript"
+                  name="Skills"
+                  value="JAVASCRIPT"
+                />
+                <label class="javascript">JAVASCRIPT</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="user_input">
+            <label for="experience">Experience</label>
+            <select name="experience" id="level">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div class="user_input">
+            <label for="comment">Comments</label>
+            <textarea
+              name="comment"
+              id="comments"
+              placeholder="Please type in your query here..."
+            ></textarea>
+          </div>
+
+          <div class="btn-container">
+            <button class="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Stockholm games. All rights reserved</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <span>|</span>
+          <a href="#">Terms of service</a>
+          <span>|</span>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

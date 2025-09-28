@@ -1,24 +1,24 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  background-image: url("../images/bg-image.png");
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url("../images/bg-image.png");
 }
 
 .navbar {
+  background-color: #34495e;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #34495e;
   padding: 1rem;
 }
 
@@ -70,10 +70,10 @@ body {
 }
 
 .nav-links li {
-  text-align: center;
-  padding: 1rem;
   background-color: #5b738d;
   border-top: 1px solid #555;
+  text-align: center;
+  padding: 1rem;
 }
 
 .nav-links .active {
